@@ -14,28 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<!-- To install a custom jar into the project: 
-	    1) cd to the root of your 
-		project ( e.g. cd C:\Users\MACLEOKS\Dev\workspace\CrudRepositoryException\crud-repository-exception\) 
-		2) execute the following: 
-		mvn deploy:deploy-file -DgroupId=[GROUP] -DartifactId=[ARTIFACT] -Dversion=[VERS] 
-		-Durl=file:./localmavenrepo/ -DrepositoryId=localmavenrepo -DupdateReleaseInfo=true 
-		-Dfile=[FILE_PATH] 
-		3) add the dependency as normal below. 
-		Previous jars deployed into custom repository:
-		Below is for current version of oracle.
-		mvn deploy:deploy-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.4 -Durl=file:./localmavenrepo/ -DrepositoryId=localmavenrepo -DupdateReleaseInfo=true -Dfile=C:\Users\MACLEOKS\Dev\jars\ojdbc6.jar
-		mvn deploy:deploy-file -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0 -Durl=file:./localmavenrepo/ -DrepositoryId=localmavenrepo -DupdateReleaseInfo=true -Dfile=C:\Users\MACLEOKS\Dev\jars\ojdbc7.jar
-		-->
-		
-	
 	<repositories>
-	
-		<!-- Include custom jars in the project's localmavenrepo folder -->
-		<repository>
-			<id>localmavenrepo</id>
-			<url>file:${project.basedir}/localmavenrepo</url>
-		</repository>
 		
 		<!-- For Spring Boot Milestone -->
 		<repository>
@@ -94,13 +73,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
-		<!-- Oracle JDBC driver -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.4</version>
-		</dependency>
+			
 
 	</dependencies>
 
