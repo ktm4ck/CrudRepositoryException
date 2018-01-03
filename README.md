@@ -1,5 +1,5 @@
 # CrudRepositoryException
-Attempt to recreate CrudRepository Exception : Required name for ParameterBinding not available
+Purpose: Recreate CrudRepository Exception : Required name for ParameterBinding not available
 
-Instructions:
-1) Run JUNIT test:  TableEntityRepositoryTest
+Run Instructions:
+1) Run JUnit test:  TableEntityRepositoryTest
