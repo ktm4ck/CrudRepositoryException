@@ -12,11 +12,9 @@ public interface TableEntityRepository extends CrudRepository<TableEntity, Strin
 
 		@Query(value= " select * from table_entity "
 	        +   " where lower(col1) = lower(?1) "
-	        +   " and lower(col2) = lower('001:1') "
+	        +   " and lower(col2) = lower('001\\:1') "
 	        , nativeQuery = true)
 	  public List<TableEntity> findByCol1 (String col1);
-	
-	
-	
+		
 	
 }
